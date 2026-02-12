@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spending Tracker</title>
+    <link rel="stylesheet" href="spending-styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💰 Spending Tracker</h1>
+            <p class="subtitle">Log your purchases</p>
+        </header>
+
+        <form id="spendingForm">
+            <!-- Costco Card -->
+            <div class="spending-card">
+                <label for="costcoCard">Costco Card</label>
+                <div class="input-group">
+                    <span class="currency">$</span>
+                    <input 
+                        type="number" 
+                        id="costcoCard" 
+                        name="costcoCard" 
+                        placeholder="0.00" 
+                        step="0.01"
+                        min="0">
+                </div>
+            </div>
+
+            <!-- TD Card -->
+            <div class="spending-card">
+                <label for="tdCard">TD Card</label>
+                <div class="input-group">
+                    <span class="currency">$</span>
+                    <input 
+                        type="number" 
+                        id="tdCard" 
+                        name="tdCard" 
+                        placeholder="0.00" 
+                        step="0.01"
+                        min="0">
+                </div>
+            </div>
+
+            <!-- Debit Card -->
+            <div class="spending-card">
+                <label for="debitCard">Debit Card/Account</label>
+                <div class="input-group">
+                    <span class="currency">$</span>
+                    <input 
+                        type="number" 
+                        id="debitCard" 
+                        name="debitCard" 
+                        placeholder="0.00" 
+                        step="0.01"
+                        min="0">
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Log Spending</button>
+        </form>
+
+        <div id="successMessage" class="success-message hidden">
+            ✓ Spending logged successfully!
+        </div>
+
+        <div id="errorMessage" class="error-message hidden">
+            ⚠ Please enter at least one amount
+        </div>
+    </div>
+
+    <script src="spending-script.js"></script>
+</body>
+</html>
