@@ -3,12 +3,12 @@
 // ============================================
 // Replace with your Google Form's formResponse URL and entry IDs
 
-const GOOGLE_FORM_URL = 'YOUR_FORM_URL_HERE';
+const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSdqkvujvmzZ1Rjs52tNTQDtPuaBoutIcRoftxXlOIICjfPRLA/formResponse';
 // Example: 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse'
 
 const ENTRY_IDS = {
-    cardType: 'YOUR_CARD_TYPE_ENTRY_ID',      // e.g., 'entry.123456789'
-    amount: 'YOUR_AMOUNT_ENTRY_ID'            // e.g., 'entry.987654321'
+    cardType: 'entry.369157768',      // e.g., 'entry.123456789'
+    amount: 'entry.1589254716'            // e.g., 'entry.987654321'
 };
 
 // ============================================
